@@ -4,80 +4,117 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/technology.css" />
-		<title>N94-Team-work</title>
+		<title>Space</title>
 		<style type="text/tailwindcss">
 			@layer utilities {
 			}
 		</style>
 	</head>
+
 	<body>
-
-			<header class="pt-[40px] pl-[55px] flex items-center justify-between">
-				<a class="rounded-full bg-white" href="/"> <img src="./images/logo.svg" alt="Site Logo" width="48" height="48"></a>
-				 <nav class="w-[830px] relative bg-[#FFFFFF0A] header-navbar py-[38px] pl-[123px] flex items-conter gap [48px]">
-				<span class="w-[473px] absolute top-6 bottom-0 opacity-[4%] my-auto h-[2px] bg-[#FFFFFF] left-[-420px]"></span>
-				<a class="flex items-center gap-[12px] text-white" href="/">
-				<strong class="font-bold">00</strong>
-				<p class="font-normal">HOME</p>
-				</a>
-				<a class="flex items-conter gap-[12px] text-white" href="./desttnatton.html">
-				<strong class="font-bold">01</strong>
-				<p class="font-normal">DESTINATION</p>
-				</a>
-				<a class="flex items-center gap-[12px] text-white" href="./crew.html">
-				<strong class="font-bold">02</strong>
-				<p class="font-normal">CREW</p>
+		<header class="pt-[40px] pl-[55px] flex items-center justify-between">
+			<a href="/">
+				<img
+					src="./images/header-bg-logo.svg"
+					alt="Site Logo"
+					width="48"
+					height="48"
+				/>
 			</a>
-				<a class="flex items-center gap-[12px] text-white" href="./technology.html">
-				<strong class="font-bold">03</strong>
-				<p class="font-normal">TECHNOLOGY</p>
+			<nav
+				class="nav-link w-[830px] relative bg-[rgba(255,255,255,0.04)] header-navbar py-[38px] pl-[123px] flex items-center gap-[48px]"
+			>
+				<span
+					class="w-[430px] absolute top-0 bottom-0 my-auto h-[1px] span-bg left-[-380px]"
+				></span>
+				<a
+					href="./index.html"
+					target="_blank"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold">00</strong>
+					<p class="font-normal">HOME</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
 				</a>
-				</nav>
-				</header>
-				
+				<a
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+					href="./destination.html"
+					target="_blank"
+				>
+					<strong class="font-bold">01</strong>
+					<p class="font-normal">DESTINATION</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
 
-		<main>
-			<div class="containers ">
-
-            <div class="flex items-center justify-start gap-3 my-10 font-Barlow Condensed">
-				<svg width="29" height="21" viewBox="0 0 29 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path opacity="0.25" d="M5.828 20.308C4.18533 20.308 2.86 19.7947 1.852 18.768C0.844 17.7227 0.34 16.3507 0.34 14.652V5.748C0.34 4.04933 0.844 2.68667 1.852 1.66C2.86 0.614666 4.18533 0.0919993 5.828 0.0919993C6.91067 0.0919993 7.872 0.325332 8.712 0.791999C9.552 1.25867 10.196 1.92133 10.644 2.78C11.1107 3.63867 11.344 4.628 11.344 5.748V14.652C11.344 15.772 11.1107 16.7613 10.644 17.62C10.196 18.4787 9.552 19.1413 8.712 19.608C7.872 20.0747 6.91067 20.308 5.828 20.308ZM5.828 16.92C6.29467 16.92 6.668 16.7333 6.948 16.36C7.24667 15.9867 7.396 15.492 7.396 14.876V5.524C7.396 4.908 7.24667 4.41333 6.948 4.04C6.668 3.66667 6.29467 3.48 5.828 3.48C5.36133 3.48 4.988 3.66667 4.708 4.04C4.428 4.41333 4.288 4.908 4.288 5.524V14.876C4.288 15.492 4.428 15.9867 4.708 16.36C4.988 16.7333 5.36133 16.92 5.828 16.92ZM28.0845 11.712C28.1778 12.4213 28.2245 13.112 28.2245 13.784C28.2245 14.6053 28.1872 15.3053 28.1125 15.884C27.9632 17.228 27.4405 18.292 26.5445 19.076C25.6672 19.8413 24.4818 20.224 22.9885 20.224C21.4392 20.224 20.1792 19.8133 19.2085 18.992C18.2378 18.1707 17.7152 17.0787 17.6405 15.716C17.5845 15.212 17.5565 14.6707 17.5565 14.092C17.5565 13.868 17.6685 13.756 17.8925 13.756H21.1685C21.3925 13.756 21.5045 13.868 21.5045 14.092C21.5045 14.5213 21.5325 14.9227 21.5885 15.296C21.6445 15.7813 21.7938 16.164 22.0365 16.444C22.2792 16.7053 22.5965 16.836 22.9885 16.836C23.3618 16.836 23.6698 16.7053 23.9125 16.444C24.1552 16.1827 24.3138 15.828 24.3885 15.38C24.4445 14.7267 24.4725 14.0547 24.4725 13.364C24.4725 12.4867 24.4258 11.796 24.3325 11.292C24.2578 10.8627 24.0992 10.536 23.8565 10.312C23.6325 10.0693 23.3432 9.948 22.9885 9.948C22.7085 9.948 22.4285 10.0693 22.1485 10.312C22.0365 10.3867 21.9618 10.424 21.9245 10.424C21.8498 10.424 21.7658 10.3773 21.6725 10.284L19.9925 8.576C19.9178 8.50133 19.8805 8.41733 19.8805 8.324C19.8805 8.24933 19.9085 8.17467 19.9645 8.1L23.3525 3.928C23.3898 3.89067 23.3992 3.85333 23.3805 3.816C23.3618 3.77867 23.3245 3.76 23.2685 3.76H18.2285C18.1352 3.76 18.0512 3.732 17.9765 3.676C17.9205 3.60133 17.8925 3.51733 17.8925 3.424V0.735999C17.8925 0.642666 17.9205 0.567999 17.9765 0.511999C18.0512 0.437332 18.1352 0.399999 18.2285 0.399999H27.8605C27.9538 0.399999 28.0285 0.437332 28.0845 0.511999C28.1592 0.567999 28.1965 0.642666 28.1965 0.735999V3.536C28.1965 3.68533 28.1498 3.82533 28.0565 3.956L24.9205 7.904C24.9018 7.94133 24.8925 7.97867 24.8925 8.016C24.8925 8.05333 24.9112 8.072 24.9485 8.072C25.7698 8.14667 26.4605 8.52 27.0205 9.192C27.5992 9.864 27.9538 10.704 28.0845 11.712Z" fill="white"/>
-					</svg>
-           <h3 class="text-[28px] text-white leading-100%">SPACE LAUNCH 101</h3>
-			</div>
-
-          <div class="mt-[50px] my-[300px] flex items-start justify-start gap-6">
-
-			<div class="mt-[100px] flex flex-col justify-start gap-[30px]">
-				<a class="w-[80px] h-[80px] border border-white-500 bg-white rounded-full text-black text-[32px] flex items-center justify-center ">1</a>
-				<a class="w-[80px] h-[80px] border border-white-500 bg-transparent hover:bg-white rounded-full text-white hover:text-black duration-300 text-[32px] flex items-center justify-center ">2</a>
-				<a class="w-[80px] h-[80px] border border-white-500 bg-transparent hover:bg-white rounded-full text-white hover:text-black duration-300 text-[32px] flex items-center justify-center ">3</a>
-				
-			</div>
-
-            <div class="mt-[100px] ml-[50px]">
-				<p class="text-white">THE TERMINOLOGY…</p>
-				<h1 class="text-[56px] text-white mb-[15px]">LAUNCH VEHICLE</h1>
-				<p class="text-white">A launch vehicle or carrier rocket is a rocket-propelled <br> vehicle used to carry a payload from Earth's surface to <br> space, usually to Earth orbit or beyond. Our WEB-X <br> carrier rocket is the most powerful in operation. Standing <br> 150 metres tall, it's quite an awe-inspiring sight on the <br> launch pad!</p>
-			</div>
-                
-            
-
-		  </div>
-
-      <div class="absolute top-[250px] right-0">
-		<img class="w-[515px] h-[527px]" src="/images/rpic.jpg" alt="">
-
-	  </div>
-			</div>
-		</main>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			tailwind.config = {
-				theme: {
-					extend: {},
-				},
-			}
-		</script>
+				<a
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+					href="./crew.html"
+					target="_blank"
+				>
+					<strong class="font-bold">03</strong>
+					<p class="font-normal">CREW</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
+				        <a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+                href="#">
+                <strong class="font-bold">04</strong>
+                <p class="font-normal">TECHNOLOGY</p>
+                <span
+                    class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+            </a>
+			</nav>
+		</header>
+		    <main>
+        <section class="flex">
+        <div class="containers flex gap-[90px]">
+            <div>
+                <div class="flex gap-[24px] pt-[76px]">
+                    <span class="font-barlow font-semibold text-[28px] leading-[1] tracking-[4.72px] span-clr">03</span>
+                    <p
+                        class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] tracking-[4.72px] uppercase">
+                        SPACE LAUNCH 101
+                    </p>
+                </div>
+                <div class="flex gap-[80px]">
+                <div class="flex flex-col gap-[32px] pt-[137px] pb-[213px]">
+                    <a href="#">
+                        <span
+                            class="hover:bg-white hover:text-black duration-300 w-[80px] h-[80px] border border-white  text-[#FFFFFF]  rounded-full flex items-center justify-center font-normal text-[32px] ">1</span>
+                    </a>
+                    <a href="./spaceport.html" target="_blank">
+                        <span
+                            class="hover:bg-white hover:text-black duration-300 w-[80px] h-[80px] border border-white text-[#FFFFFF]  rounded-full flex items-center justify-center font-normal text-[32px] ">2</span>
+                    </a>
+                    <a href="./spacecapsule.html" target="_blank">
+                        <span
+                            class="hover:bg-white hover:text-black duration-300 w-[80px] h-[80px] border border-white text-[#FFFFFF]  rounded-full flex items-center justify-center font-normal text-[32px] ">3</span>
+                    </a>
+                </div>
+                <div class="pt-[137px]">
+                    <span class="text-[#D0D6F9] text-[16px] font-normal tracking-[2.7]">THE TERMINOLOGY…</span>
+                    <h2 class="font-normal text-[56px] loading-[1] text-[#FFFFFF] mt-[11px]">LAUNCH VEHICLE</h2>
+                    <p class="w-[444px] text-[#D0D6F9] text-[18px] loading-[32px] mt-[17px]">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="pt-[136px] pb-[101px]">
+            <img src="./images/rpic.jpg" alt="crew people" width="515" height="527" />
+        </div>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
 	</body>
 </html>

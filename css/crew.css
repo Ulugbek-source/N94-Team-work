@@ -16,16 +16,27 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Bellefair', serif;
+	font-family: 'Bellefair', sans-serif;
 	font-family: 'Barlow', sans-serif;
 	background-image: url(../images/back-img-moon.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center top;
 }
 .containers {
 	max-width: 1147px;
 	margin: 0 auto;
 	padding: 0 20px;
-	
 }
-
+.span-bg {
+	background: #ffffff;
+	opacity: 26%;
+}
+.span-clr,
+.strong-clr {
+	color: #ffffff;
+	opacity: 26%;
+}
+.font {
+	font-family: 'Bellefair', sans-serif;
+}

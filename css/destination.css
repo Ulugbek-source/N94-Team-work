@@ -28,33 +28,31 @@ body {
 	margin: 0 auto;
 	padding: 0 20px;
 }
-.span-clr, .hr-clr{
-    color: #FFFFFF;
+.span-clr,
+.hr-clr {
+	color: #ffffff;
 	opacity: 26%;
-  }
-.span-bg{
-    background: #FFFFFF;
+}
+.span-bg {
+	background: #ffffff;
 	opacity: 26%;
-  }
-.navbar-bg{
-    backdrop-filter: blur(81.54845428466797px);
-    background: #FFFFFF0A;
-  }
-
-  @keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+}
+.navbar-bg {
+	backdrop-filter: blur(81.54845428466797px);
+	background: #ffffff0a;
 }
 
-.moon {
-    animation: rotate360 20s linear infinite;
-    transform-origin: center center;
+@keyframes rotate360 {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
 }
 
-
-
+.rotate {
+	animation: rotate360 20s linear infinite;
+	transform-origin: center center;
+}
