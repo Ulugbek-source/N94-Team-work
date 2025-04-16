@@ -1,27 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/destination.css" />
-		<title>N94-Team-work</title>
-		<style type="text/tailwindcss">
-			@layer utilities {
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/destination.css" />
+	<title>N94-Team-work</title>
+	<style type="text/tailwindcss">
+		@layer utilities {
 			}
 		</style>
-	</head>
-	<body>
-		<header></header>
-		<main>
-			<div class="containers"></div>
-		</main>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			tailwind.config = {
-				theme: {
-					extend: {},
-				},
-			}
-		</script>
-	</body>
+</head>
+
+<body>
+	<header class="pt-[40px] pl-[55px] flex items-center justify-between">
+		<a href="/">
+			<img src="./images/header-bg-logo.svg" alt="Site Logo" width="48" height="48" />
+		</a>
+		<nav
+			class="w-[830px] relative bg-[rgba(255,255,255,0.04)] header-navbar py-[38px] pl-[123px] flex items-center gap-[48px] ">
+			<span class="w-[473px] absolute top-0 bottom-0 my-auto h-[1px] span-bg left-[-440px]"></span>
+			<a href="/" class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]">
+				<strong class="font-bold">00</strong>
+				<p class="font-normal">HOME</p>
+				<span
+					class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+			</a>
+			<a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				href="./destination.html">
+				<strong class="font-bold">01</strong>
+				<p class="font-normal">DESTINATION</p>
+				<span
+					class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+			</a>
+
+			<a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				href="./crew.html">
+				<strong class="font-bold">03</strong>
+				<p class="font-normal">CREW</p>
+				<span
+					class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+			</a>
+
+			<a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				href="./technology.html">
+				<strong class="font-bold">04</strong>
+				<p class="font-normal">TECHNOLOGY</p>
+				<span
+					class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="containers pb-[118px]">
+			<div class="flex pt-[76px] gap-[28px]">
+				<span class="font-barlow font-semibold text-[28px] leading-[1] tracking-[4.72px] span-clr">01</span>
+				<p class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] tracking-[4.72px] uppercase">
+					Pick your destination</p>
+			</div>
+			<div class="flex gap-[206px] pt-[64px]">
+				<div>
+					<img class="moon" src="./images/hero-moon.png" alt="Moon" width="445" height="445">
+				</div>
+				<div class="max-w-[445px]">
+					<nav
+						class="flex gap-[35px] text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px]">
+						<a class="text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px] relative group uppercase tracking-[2px]"
+							href="#">MOON
+							<span
+								class="absolute left-0 bottom-[-20px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+						</a>
+						<a class="text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px] relative group uppercase tracking-[2px]"
+							href="#">MARS
+							<span
+								class="absolute left-0 bottom-[-20px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+						</a>
+						<a class="text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px] relative group uppercase tracking-[2px]"
+							href="#">EUROPA
+							<span
+								class="absolute left-0 bottom-[-20px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+						</a>
+						<a class="text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px] relative group uppercase tracking-[2px]"
+							href="#">TITAN
+							<span
+								class="absolute left-0 bottom-[-20px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
+						</a>
+					</nav>
+					<h2 class="font-normal text-[150px] loading-[1] text-[#FFFFFF]">MOON</h2>
+					<p class="mt-[30px] text-[#D0D6F9] text-[18px] loading-[32px]">See our planet as you’ve never seen
+						it before. A perfect relaxing trip away to help regain perspective and come back refreshed.
+						While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+					<hr class="mt-[54px] hr-clr">
+					<div class="mt-[28px] flex gap-[79px]">
+						<span
+							class="text-white font-barlow font-normal text-[14px] leading-[1] tracking-[3.36px] uppercase">AVG.
+							DISTANCE</span>
+						<span
+							class="text-white font-barlow font-normal text-[14px] leading-[1] tracking-[3.36px] uppercase">Est.
+							travel time</span>
+					</div>
+					<div class="mt-[12px] flex gap-[79px]">
+						<p class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] uppercase">384,400 km
+						</p>
+						<p class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] uppercase">3 days</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {},
+			},
+		}
+	</script>
+</body>
+
 </html>

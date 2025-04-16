@@ -18,9 +18,43 @@
 body {
 	font-family: 'Bellefair', serif;
 	font-family: 'Barlow', sans-serif;
+	background-image: url(../images/hero-bg-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
 }
 .containers {
 	max-width: 1147px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
+.span-clr, .hr-clr{
+    color: #FFFFFF;
+	opacity: 26%;
+  }
+.span-bg{
+    background: #FFFFFF;
+	opacity: 26%;
+  }
+.navbar-bg{
+    backdrop-filter: blur(81.54845428466797px);
+    background: #FFFFFF0A;
+  }
+
+  @keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.moon {
+    animation: rotate360 20s linear infinite;
+    transform-origin: center center;
+}
+
+
+
