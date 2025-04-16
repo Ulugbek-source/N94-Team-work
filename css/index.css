@@ -9,6 +9,13 @@
 	font-display: swap;
 	font-family: 'Barlow';
 	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2');
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Barlow';
+	font-style: normal;
 	font-weight: 400;
 	src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2');
 }
@@ -18,9 +25,21 @@
 body {
 	font-family: 'Bellefair', serif;
 	font-family: 'Barlow', sans-serif;
+	background-image: url(../images/space-desktop-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 .containers {
 	max-width: 1147px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+@media (max-width: 1156px) {
+	body {
+		background-image: url(../images/space-tablet-bg.png);
+		background-position: center bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
