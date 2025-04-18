@@ -13,45 +13,84 @@
 </head>
 
 <body>
-    <header class="pt-[40px] pl-[55px] flex items-center justify-between">
-        <a href="/">
-            <img src="./images/header-bg-logo.svg" alt="Site Logo" width="48" height="48" />
-        </a>
-        <nav
-            class="nav-link w-[830px] relative bg-[rgba(255,255,255,0.04)] header-navbar py-[38px] pl-[123px] flex items-center gap-[48px]">
-            <span class="w-[430px] absolute top-0 bottom-0 my-auto h-[1px] span-bg left-[-380px]"></span>
-            <a href="./index.html" target="_blank"
-                class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]">
-                <strong class="font-bold">00</strong>
-                <p class="font-normal">HOME</p>
-                <span
-                    class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-            </a>
-            <a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-                href="./destination.html" target="_blank">
-                <strong class="font-bold">01</strong>
-                <p class="font-normal">DESTINATION</p>
-                <span
-                    class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-            </a>
-
-            <a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]" href="./crew.html" target="_blank">
-                <strong class="font-bold">03</strong>
-                <p class="font-normal">CREW</p>
-                <span
-                    class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-            </a>
-
-
-            <a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-                href="./technology.html" target="_blank">
-                <strong class="font-bold">04</strong>
-                <p class="font-normal">TECHNOLOGY</p>
-                <span
-                    class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-            </a>
-        </nav>
-    </header>
+ 		<header
+			class="pt-[24px] md:pt-0 xl:pt-[40px] pl-[39px] xl:pl-[55px] flex items-center justify-between"
+		>
+			<a href="/">
+				<img src="./images/logo.svg" alt="Site logo" width="48" height="48" />
+			</a>
+			<nav
+				class="hidden md:w-[470px] md:flex xl:w-[830px] xl:flex relative bg-[#FFFFFF0a] backdrop-blur-md header-navbar py-[38px] pl-[48px] xl:pl-[123px] flex items-center gap-[37px] xl:gap-[48px]"
+			>
+				<span
+					class="w-[430px] absolute hidden xl:inline-block top-0 bottom-0 opacity-[4%] my-auto h-[2px] bg-[#ffffff] left-[-380px]"
+				></span>
+				<a
+					href="/"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold hidden xl:block">00</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						HOME
+					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
+				<a
+					href="/destination.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold hidden xl:block">01</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						Destination
+					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
+				<a
+					href="/crew.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold hidden xl:block">02</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						CREW
+					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
+				<a
+					href="/technology.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold hidden xl:block">03</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						Technology
+					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
+			</nav>
+			<button id="menu-btn" class="block pr-[24px] md:hidden">
+				<img
+					src="./images/menu-icon.svg"
+					alt="Menu icon"
+					width="24"
+					height="21"
+				/>
+			</button>
+		</header>
     <main>
         <section class="flex">
         <div class="containers flex gap-[90px]">

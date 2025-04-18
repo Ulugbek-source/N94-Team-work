@@ -12,92 +12,149 @@
 	</head>
 
 	<body>
-		<header class="pt-[40px] pl-[55px] flex items-center justify-between">
+		<header
+			class="pt-[24px] md:pt-0 xl:pt-[40px] pl-[39px] xl:pl-[55px] flex items-center justify-between"
+		>
 			<a href="/">
-				<img
-					src="./images/header-bg-logo.svg"
-					alt="Site Logo"
-					width="48"
-					height="48"
-				/>
+				<img src="./images/logo.svg" alt="Site logo" width="48" height="48" />
 			</a>
 			<nav
-				class="w-[830px] relative bg-[rgba(255,255,255,0.04)] header-navbar py-[38px] pl-[123px] flex items-center gap-[48px]"
+				class="hidden md:w-[470px] md:flex xl:w-[830px] xl:flex relative bg-[#FFFFFF0a] backdrop-blur-md header-navbar py-[38px] pl-[48px] xl:pl-[123px] flex items-center gap-[37px] xl:gap-[48px]"
 			>
 				<span
-					class="w-[430px] absolute top-0 bottom-0 my-auto h-[1px] span-bg left-[-380px]"
+					class="w-[430px] absolute hidden xl:inline-block top-0 bottom-0 opacity-[4%] my-auto h-[2px] bg-[#ffffff] left-[-380px]"
 				></span>
 				<a
 					href="/"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
 				>
-					<strong class="font-bold">00</strong>
-					<p class="font-normal">HOME</p>
+					<strong class="font-bold hidden xl:block">00</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						HOME
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
 				<a
+					href="/destination.html"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-					href="./destination.html"
 				>
-					<strong class="font-bold">01</strong>
-					<p class="font-normal">DESTINATION</p>
+					<strong class="font-bold hidden xl:block">01</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						Destination
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
-
 				<a
+					href="/crew.html"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-					href="./crew.html"
 				>
-					<strong class="font-bold">03</strong>
-					<p class="font-normal">CREW</p>
+					<strong class="font-bold hidden xl:block">02</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						CREW
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
-
 				<a
+					href="/technology.html"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-					href="./technology.html"
 				>
-					<strong class="font-bold">04</strong>
-					<p class="font-normal">TECHNOLOGY</p>
+					<strong class="font-bold hidden xl:block">03</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						Technology
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
 			</nav>
+			<button id="menu-btn" class="block pr-[24px] md:hidden">
+				<img
+					src="./images/menu-icon.svg"
+					alt="Menu icon"
+					width="24"
+					height="21"
+				/>
+			</button>
 		</header>
+		<div
+			id="sidebar"
+			class="fixed top-0 right-0 h-full w-2/3 sm:w-1/2 bg-gradient-to-b from-black to-gray-900 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40"
+		>
+			<button id="close-btn" class="absolute top-6 right-6">
+				<svg
+					class="w-8 h-8"
+					fill="none"
+					stroke="white"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6 18L18 6M6 6l12 12"
+					/>
+				</svg>
+			</button>
 
+			<nav
+				class="mt-24 ml-8 space-y-8 text-lg tracking-widest font-light uppercase"
+			>
+				<a href="/" class="block"><span class="font-bold">00</span> Home</a>
+				<a href="/destination.html" class="block"
+					><span class="font-bold">01</span> Destination</a
+				>
+				<a href="/crew.html" class="block"
+					><span class="font-bold">02</span> Crew</a
+				>
+				<a href="/technology.html" class="block"
+					><span class="font-bold">03</span> Technology</a
+				>
+			</nav>
+		</div>
 		<main>
 			<div class="containers pb-[118px]">
-				<div class="flex pt-[76px] gap-[28px]">
+				<div
+					class="flex pt-[76px] gap-[19px] xl:gap-[28px] justify-center md:justify-start xl:justify-start"
+				>
 					<span
-						class="font-barlow font-semibold text-[28px] leading-[1] tracking-[4.72px] span-clr"
+						class="font-barlow font-semibold text-[16px] md:text-[20px] xl:text-[28px] leading-[1] tracking-[2.7px] md:tracking-[3.38px] xl:tracking-[4.72px] span-clr"
 						>01</span
 					>
 					<p
-						class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] tracking-[4.72px] uppercase"
+						class="text-[#FFFFFF] font-barlow font-normal text-[16px] md:text-[20px] xl:text-[28px] leading-[1] tracking-[2.7px] md:tracking-[3.38px] xl:tracking-[4.72px] uppercase"
 					>
 						Pick your destination
 					</p>
 				</div>
-				<div class="flex gap-[206px] pt-[64px]">
+				<div
+					class="flex flex-col xl:flex-row gap-[53px] xl:gap-[206px] pt-[64px] text-center xl:text-start"
+				>
 					<div>
 						<img
-							class="rotate"
+							class="rotate mx-auto w-[170px] h-[170px] md:w-[300px] md:h-[300px] xl:w-[445px] xl:h-[445px]"
 							src="./images/hero-moon.png"
 							alt="Moon"
 							width="445"
 							height="445"
 						/>
 					</div>
-					<div class="max-w-[445px]">
+					<div class="max-w-[445px] mx-auto">
 						<nav
-							class="flex gap-[35px] text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px]"
+							class="mb-[20px] md:mb-[32px] xl:mb-[37px] justify-center xl:justify-start flex gap-[35px] text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px]"
 						>
 							<a
 								class="text-[#FFFFFF] font-barlow font-normal text-[16px] leading-[1] tracking-[2.7px] relative group uppercase tracking-[2px]"
@@ -132,27 +189,33 @@
 								></span>
 							</a>
 						</nav>
-						<h2 class="font-normal text-[150px] loading-[1] text-[#FFFFFF]">
+						<h2
+							class="font-normal text-[56px] md:text-[80px] xl:text-[150px] leading-[1] text-[#FFFFFF]"
+						>
 							MOON
 						</h2>
-						<p class="mt-[30px] text-[#D0D6F9] text-[18px] loading-[32px]">
+						<p
+							class="mt-[8px] xl:mt-[30px] text-[#D0D6F9] text-[16px] xl:text-[18px] leading-[28px] xl:leading-[32px]"
+						>
 							See our planet as you’ve never seen it before. A perfect relaxing
 							trip away to help regain perspective and come back refreshed.
 							While you’re there, take in some history by visiting the Luna 2
 							and Apollo 11 landing sites.
 						</p>
-						<hr class="mt-[54px] hr-clr" />
-						<div class="mt-[28px] flex gap-[79px]">
+						<hr class="mt-[49px] xl:mt-[54px] hr-clr" />
+						<div
+							class="mt-[28px] flex gap-[40px] md:gap-[79px] max-w-[574px] justify-center"
+						>
 							<span
-								class="text-white font-barlow font-normal text-[14px] leading-[1] tracking-[3.36px] uppercase"
+								class="block text-white font-barlow font-normal text-[14px] leading-[1] tracking-[3.36px] uppercase"
 								>AVG. DISTANCE</span
 							>
 							<span
-								class="text-white font-barlow font-normal text-[14px] leading-[1] tracking-[3.36px] uppercase"
+								class="block text-white font-barlow font-normal text-[14px] leading-[1] tracking-[3.36px] uppercase"
 								>Est. travel time</span
 							>
 						</div>
-						<div class="mt-[12px] flex gap-[79px]">
+						<div class="mt-[12px] flex gap-[40px] md:gap-[79px] justify-center">
 							<p
 								class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] uppercase"
 							>
@@ -168,6 +231,19 @@
 				</div>
 			</div>
 		</main>
+		<script>
+			const menuBtn = document.getElementById('menu-btn')
+			const closeBtn = document.getElementById('close-btn')
+			const sidebar = document.getElementById('sidebar')
+
+			menuBtn.addEventListener('click', () => {
+				sidebar.classList.remove('translate-x-full')
+			})
+
+			closeBtn.addEventListener('click', () => {
+				sidebar.classList.add('translate-x-full')
+			})
+		</script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script>
 			tailwind.config = {

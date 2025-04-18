@@ -10,111 +10,220 @@
 			}
 		</style>
 	</head>
-
 	<body>
-		<header class="pt-[40px] pl-[55px] flex items-center justify-between">
+		<header
+			class="pt-[24px] md:pt-0 xl:pt-[40px] pl-[39px] xl:pl-[55px] flex items-center justify-between"
+		>
 			<a href="/">
-				<img
-					src="./images/header-bg-logo.svg"
-					alt="Site Logo"
-					width="48"
-					height="48"
-				/>
+				<img src="./images/logo.svg" alt="Site logo" width="48" height="48" />
 			</a>
 			<nav
-				class="nav-link w-[830px] relative bg-[rgba(255,255,255,0.04)] header-navbar py-[38px] pl-[123px] flex items-center gap-[48px]"
+				class="hidden md:w-[470px] md:flex xl:w-[830px] xl:flex relative bg-[#FFFFFF0a] backdrop-blur-md header-navbar py-[38px] pl-[48px] xl:pl-[123px] flex items-center gap-[37px] xl:gap-[48px]"
 			>
 				<span
-					class="w-[430px] absolute top-0 bottom-0 my-auto h-[1px] span-bg left-[-380px]"
+					class="w-[430px] absolute hidden xl:inline-block top-0 bottom-0 opacity-[4%] my-auto h-[2px] bg-[#ffffff] left-[-380px]"
 				></span>
 				<a
-					href="./index.html"
-					target="_blank"
+					href="/"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
 				>
-					<strong class="font-bold">00</strong>
-					<p class="font-normal">HOME</p>
+					<strong class="font-bold hidden xl:block">00</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						HOME
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
 				<a
+					href="/destination.html"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-					href="./destination.html"
-					target="_blank"
 				>
-					<strong class="font-bold">01</strong>
-					<p class="font-normal">DESTINATION</p>
+					<strong class="font-bold hidden xl:block">01</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						Destination
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
-
 				<a
+					href="/crew.html"
 					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-					href="./crew.html"
-					target="_blank"
 				>
-					<strong class="font-bold">03</strong>
-					<p class="font-normal">CREW</p>
+					<strong class="font-bold hidden xl:block">02</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						CREW
+					</p>
 					<span
 						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
 					></span>
 				</a>
-				        <a class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
-                href="#">
-                <strong class="font-bold">04</strong>
-                <p class="font-normal">TECHNOLOGY</p>
-                <span
-                    class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-            </a>
+				<a
+					href="/technology.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold hidden xl:block">03</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						Technology
+					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
 			</nav>
+			<button id="menu-btn" class="block pr-[24px] md:hidden">
+				<img
+					src="./images/menu-icon.svg"
+					alt="Menu icon"
+					width="24"
+					height="21"
+				/>
+			</button>
 		</header>
-		    <main>
-        <section class="flex">
-        <div class="containers flex gap-[90px]">
-            <div>
-                <div class="flex gap-[24px] pt-[76px]">
-                    <span class="font-barlow font-semibold text-[28px] leading-[1] tracking-[4.72px] span-clr">03</span>
-                    <p
-                        class="text-[#FFFFFF] font-barlow font-normal text-[28px] leading-[1] tracking-[4.72px] uppercase">
-                        SPACE LAUNCH 101
-                    </p>
-                </div>
-                <div class="flex gap-[80px]">
-                <div class="flex flex-col gap-[32px] pt-[137px] pb-[213px]">
-                    <a href="#">
-                        <span
-                            class="hover:bg-white hover:text-black duration-300 w-[80px] h-[80px] border border-white  text-[#FFFFFF]  rounded-full flex items-center justify-center font-normal text-[32px] ">1</span>
-                    </a>
-                    <a href="./spaceport.html" target="_blank">
-                        <span
-                            class="hover:bg-white hover:text-black duration-300 w-[80px] h-[80px] border border-white text-[#FFFFFF]  rounded-full flex items-center justify-center font-normal text-[32px] ">2</span>
-                    </a>
-                    <a href="./spacecapsule.html" target="_blank">
-                        <span
-                            class="hover:bg-white hover:text-black duration-300 w-[80px] h-[80px] border border-white text-[#FFFFFF]  rounded-full flex items-center justify-center font-normal text-[32px] ">3</span>
-                    </a>
-                </div>
-                <div class="pt-[137px]">
-                    <span class="text-[#D0D6F9] text-[16px] font-normal tracking-[2.7]">THE TERMINOLOGY…</span>
-                    <h2 class="font-normal text-[56px] loading-[1] text-[#FFFFFF] mt-[11px]">LAUNCH VEHICLE</h2>
-                    <p class="w-[444px] text-[#D0D6F9] text-[18px] loading-[32px] mt-[17px]">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="pt-[136px] pb-[101px]">
-            <img src="./images/rpic.jpg" alt="crew people" width="515" height="527" />
-        </div>
-    </main>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {},
-            },
-        };
-    </script>
+		<div
+			id="sidebar"
+			class="fixed top-0 right-0 h-full w-2/3 sm:w-1/2 bg-gradient-to-b from-black to-gray-900 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40"
+		>
+			<button id="close-btn" class="absolute top-6 right-6">
+				<svg
+					class="w-8 h-8"
+					fill="none"
+					stroke="white"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6 18L18 6M6 6l12 12"
+					/>
+				</svg>
+			</button>
+
+			<nav
+				class="mt-24 ml-8 space-y-8 text-lg tracking-widest font-light uppercase"
+			>
+				<a href="/" class="block"><span class="font-bold">00</span> Home</a>
+				<a href="/destination.html" class="block"
+					><span class="font-bold">01</span> Destination</a
+				>
+				<a href="/crew.html" class="block"
+					><span class="font-bold">02</span> Crew</a
+				>
+				<a href="/technology.html" class="block"
+					><span class="font-bold">03</span> Technology</a
+				>
+			</nav>
+		</div>
+		<main>
+			<section class="flex flex-col-reverse xl:flex-row">
+				<div
+					class="containers flex flex-col xl:flex-row gap-[20px] xl:gap-[90px]"
+				>
+					<div>
+						<div
+							class="flex gap-[16px] xl:gap-[24px] pt-[76px] justify-center xl:justify-start"
+						>
+							<span
+								class="font-barlow font-semibold text-[16px] xl:text-[28px] leading-[1] tracking-[2.7px] xl:tracking-[4.72px] span-clr"
+								>03</span
+							>
+							<p
+								class="text-[#FFFFFF] font-barlow font-normal text-[16px] xl:text-[28px] leading-[1] tracking-[2.7px] xl:tracking-[4.72px] uppercase"
+							>
+								SPACE LAUNCH 101
+							</p>
+						</div>
+						<div
+							class="flex flex-col xl:flex-row items-center gap-[26px] md:gap-[44px] xl:gap-[80px]"
+						>
+							<div
+								class="mx-auto mt-[26px] xl:mt-[60px] max-w-[210px] flex flex-row xl:flex xl:flex-col gap-[16px] justify-center xl:gap-[32px] pt-0 pb-0 xl:pt-[100px] xl:pb-[213px]"
+							>
+								<a href="#">
+									<span
+										class="hover:bg-white hover:text-black duration-300 w-[40px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-white text-[#FFFFFF] rounded-full flex items-center justify-center font-normal text-[16px] md:text-[24px] xl:text-[32px]"
+										>1</span
+									>
+								</a>
+								<a href="./spaceport.html" target="_blank">
+									<span
+										class="hover:bg-white hover:text-black duration-300 w-[40px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-white text-[#FFFFFF] rounded-full flex items-center justify-center font-normal text-[16px] md:text-[24px] xl:text-[32px]"
+										>2</span
+									>
+								</a>
+								<a href="./spacecapsule.html" target="_blank">
+									<span
+										class="hover:bg-white hover:text-black duration-300 w-[40px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] border border-white text-[#FFFFFF] rounded-full flex items-center justify-center font-normal text-[16px] md:text-[24px] xl:text-[32px]"
+										>3</span
+									>
+								</a>
+							</div>
+							<div
+								class="pt-0 max-w-[457px] mx-auto text-center xl:text-start mb-[80px]"
+							>
+								<span
+									class="text-[#D0D6F9] text-[14px] tmd:ext-[16px] font-normal tracking-[2.36px] md:tracking-[2.7]"
+									>THE TERMINOLOGY…</span
+								>
+								<h2
+									class="font-normal text-[24px] md:text-[40px] xl:text-[56px] leading-[1] text-[#FFFFFF] mt-[9px] md:mt-[16px] xl:mt-[11px]"
+								>
+									LAUNCH VEHICLE
+								</h2>
+								<p
+									class="mx-auto max-w-[444px] text-[#D0D6F9] text-[15px] md:text-[16px] xl:text-[18px] leading-[25px] md:leading-[28px] xl:leading-[32px] mt-[17px]"
+								>
+									A launch vehicle or carrier rocket is a rocket-propelled
+									vehicle used to carry a payload from Earth's surface to space,
+									usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+									the most powerful in operation. Standing 150 metres tall, it's
+									quite an awe-inspiring sight on the launch pad!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pt-[90px] xl:pt-[136px] xl:pb-[101px]">
+					<img
+						class="w-full md:w-full xl:w-[515px] xl:h-[527px]"
+						src="./images/rpic.jpg"
+						alt="crew people"
+						width="515"
+						height="527"
+					/>
+				</div>
+			</section>
+			<script>
+				const menuBtn = document.getElementById('menu-btn')
+				const closeBtn = document.getElementById('close-btn')
+				const sidebar = document.getElementById('sidebar')
+
+				menuBtn.addEventListener('click', () => {
+					sidebar.classList.remove('translate-x-full')
+				})
+
+				closeBtn.addEventListener('click', () => {
+					sidebar.classList.add('translate-x-full')
+				})
+			</script>
+		</main>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {},
+				},
+			}
+		</script>
 	</body>
 </html>

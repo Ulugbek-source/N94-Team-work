@@ -18,51 +18,69 @@
 				<img src="./images/logo.svg" alt="Site logo" width="48" height="48" />
 			</a>
 			<nav
-				class="hidden md:w-[450px] md:flex xl:w-[830px] xl:flex relative bg-[#FFFFFF0a] backdrop-blur-md header-navbar py-[38px] pl-[48px] xl:pl-[123px] flex items-center gap-[37px] xl:gap-[48px]"
+				class="hidden md:w-[470px] md:flex xl:w-[830px] xl:flex relative bg-[#FFFFFF0a] backdrop-blur-md header-navbar py-[38px] pl-[48px] xl:pl-[123px] flex items-center gap-[37px] xl:gap-[48px]"
 			>
 				<span
-					class="w-[473px] absolute hidden xl:inline-block top-0 bottom-0 opacity-[4%] my-auto h-[2px] bg-[#ffffff] left-[-375px]"
+					class="w-[430px] absolute hidden xl:inline-block top-0 bottom-0 opacity-[4%] my-auto h-[2px] bg-[#ffffff] left-[-380px]"
 				></span>
-				<a class="flex items-center gap-[12px] text-white" href="/">
+				<a
+					href="/"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
 					<strong class="font-bold hidden xl:block">00</strong>
 					<p
-						class="text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
 					>
-						Home
+						HOME
 					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
 				</a>
 				<a
-					class="flex items-center gap-[12px] text-white"
 					href="/destination.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
 				>
 					<strong class="font-bold hidden xl:block">01</strong>
 					<p
-						class="text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
 					>
 						Destination
 					</p>
-				</a>
-				<a class="flex items-center gap-[12px] text-white" href="/crew.html">
-					<strong class="font-bold hidden xl:block">02</strong>
-					<p
-						class="text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
-					>
-						Crew
-					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
 				</a>
 				<a
-					class="flex items-center gap-[12px] text-white"
+					href="/crew.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
+				>
+					<strong class="font-bold hidden xl:block">02</strong>
+					<p
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+					>
+						CREW
+					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
+				</a>
+				<a
 					href="/technology.html"
+					class="flex items-center gap-[12px] text-white relative group uppercase tracking-[2px]"
 				>
 					<strong class="font-bold hidden xl:block">03</strong>
 					<p
-						class="text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
+						class="font-normal text-[14px] tracking-[2.36px] xl:text-[16px] xl:tracking-[2.7px]"
 					>
 						Technology
 					</p>
+					<span
+						class="absolute left-0 bottom-[-35px] w-full h-[3px] bg-white scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
+					></span>
 				</a>
 			</nav>
-			<button class="block pr-[24px] md:hidden">
+			<button id="menu-btn" class="block pr-[24px] md:hidden">
 				<img
 					src="./images/menu-icon.svg"
 					alt="Menu icon"
@@ -71,6 +89,41 @@
 				/>
 			</button>
 		</header>
+		<div
+			id="sidebar"
+			class="fixed top-0 right-0 h-full w-2/3 sm:w-1/2 bg-gradient-to-b from-black to-gray-900 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40"
+		>
+			<button id="close-btn" class="absolute top-6 right-6">
+				<svg
+					class="w-8 h-8"
+					fill="none"
+					stroke="white"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6 18L18 6M6 6l12 12"
+					/>
+				</svg>
+			</button>
+
+			<nav
+				class="mt-24 ml-8 space-y-8 text-lg tracking-widest font-light uppercase"
+			>
+				<a href="/" class="block"><span class="font-bold">00</span> Home</a>
+				<a href="/destination.html" class="block"
+					><span class="font-bold">01</span> Destination</a
+				>
+				<a href="/crew.html" class="block"
+					><span class="font-bold">02</span> Crew</a
+				>
+				<a href="/technology.html" class="block"
+					><span class="font-bold">03</span> Technology</a
+				>
+			</nav>
+		</div>
 		<main>
 			<section
 				class="pt-[48px] pb-[48px] md:pt-[106px] md:pb-[90px] xl:pt-[200px] xl:pb-[131px]"
@@ -116,6 +169,19 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			const menuBtn = document.getElementById('menu-btn')
+			const closeBtn = document.getElementById('close-btn')
+			const sidebar = document.getElementById('sidebar')
+
+			menuBtn.addEventListener('click', () => {
+				sidebar.classList.remove('translate-x-full')
+			})
+
+			closeBtn.addEventListener('click', () => {
+				sidebar.classList.add('translate-x-full')
+			})
+		</script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script>
 			tailwind.config = {
